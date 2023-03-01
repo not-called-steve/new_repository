@@ -11,16 +11,11 @@ public class Hello {
         name.add("first second");
         name.add("third fourth");
         name.add("fifth sixth");
-        int spacePosition;
-        String firstname;
-        String lastname;
         for (var i : name) {
-            spacePosition = i.indexOf(' ');
-            firstname = i.substring(0, spacePosition);
-            lastname = i.substring(spacePosition + 1, i.length());
-            firstname = firstname.concat(", ");
-            firstname = firstname.concat(lastname);
-            revName.add(firstname);
+            Name cur = new Name(i);
+            String reversed = cur.reverseOrder();
+            revName.add(reversed);
+            System.out.println(cur.getInitials());
         }
         Collections.sort(revName);
         for(var i : revName) {
