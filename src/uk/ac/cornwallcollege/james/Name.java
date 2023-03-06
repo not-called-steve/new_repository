@@ -12,7 +12,7 @@ public class Name {
 
     public String getInitials() {
         String initial = first.substring(0, 1);
-        return initial.concat(last.substring(0, 1));
+        return initial + last.substring(0, 1);
     }
 
     public String reverseOrder() {
