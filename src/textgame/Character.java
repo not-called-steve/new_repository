@@ -8,6 +8,15 @@ public class Character {
     int health;
     String name;
 
+    public Character(int size, int attack, int defence, int speed, int health, String name) {
+        this.health = health;
+        this.attack = attack;
+        this.defence = defence;
+        this.speed = speed;
+        this.size = size;
+        this.name = name;
+    }
+
     public void damage(int damage) {
         health -= damage;
     }
