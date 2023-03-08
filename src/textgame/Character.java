@@ -8,7 +8,7 @@ public class Character {
     int health;
     String name;
 
-    public Character(int size, int attack, int defence, int speed, int health, String name) {
+    public Character(int health, int attack, int defence, int speed, int size, String name) {
         this.health = health;
         this.attack = attack;
         this.defence = defence;
