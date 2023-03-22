@@ -16,4 +16,9 @@ public class BigStick extends Item{
         c.attack -= 10;
         c.speed -= 1;
     }
+
+    @Override
+    public void hit(Character target) {
+        target.damage(10);
+    }
 }

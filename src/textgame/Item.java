@@ -14,4 +14,8 @@ public class Item {
     public void remove(Character c) {
 
     }
+
+    public void hit(Character target) {
+
+    }
 }

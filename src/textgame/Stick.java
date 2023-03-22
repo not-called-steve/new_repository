@@ -14,4 +14,9 @@ public class Stick extends Item{
     public void remove(Character c) {
         c.attack -= 5;
     }
+
+    @Override
+    public void hit(Character target) {
+        target.damage(5);
+    }
 }
