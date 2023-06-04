@@ -8,6 +8,8 @@ public class Character {
     int health;
     String name;
 
+    int newVariable = 5;
+
     Item equipedItem = new Item("empty");
 
     public Character(int health, int attack, int defence, int speed, int size, String name) {
